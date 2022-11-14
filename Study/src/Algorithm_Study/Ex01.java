@@ -20,7 +20,7 @@ class Solution {
         String answer = "";
         
         for(int i=0; i<seoul.length; i++) {
-        	if(seoul[i].equals("Kim")){
+        	if(seoul[i].equals("Kim")){ //if문이 true일 때 실행문 작동
         		answer = "김서방은 " + i + "에 있다";
         				break;
         	}
@@ -28,3 +28,9 @@ class Solution {
         return answer;
     }
 }
+
+/*
+ * equals() 
+ * 매개변수로 받은 문자열과 String 인스턴스의 문자열을 비교한다. 일치하면 true 반환
+ * 
+ */
