@@ -23,3 +23,34 @@ public class Ex05 {
 	}
 
 }
+
+//다른풀이
+//class Solution {
+//    public String solution(String s) {
+//        String answer = "";
+//        int len = s.length();
+//        
+//        if(len%2==0){
+//            answer += s.charAt(len/2-1);
+//            answer += s.charAt(len/2);
+//        }else{
+//            answer += s.charAt(len/2);
+//        }
+//        return answer;
+//    }
+//}
+
+//다른풀이2
+//class Solution {
+//    public String solution(String s) {
+//        String answer = "";
+//        
+//        int len=s.length();
+//        if(len%2==1)
+//            answer=String.valueOf(s.charAt(len/2));
+//        else
+//            answer=String.valueOf(s.charAt(len/2-1))+String.valueOf(s.charAt(len/2));
+//        
+//        return answer;
+//    }
+//}
