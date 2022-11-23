@@ -39,7 +39,29 @@ class Solution {
   }
 }
 
-LocalDate.of(2016, a, b) -> 날짜를 출력 2016-a-b
+LocalDate.of(2016, a, b) -> 날짜를 출력 2016-a-b, 빈칸이면 현재 컴퓨터 날짜 출력
 getDayOfWeek() -> 요일을 출력 SUNDAY, MONDAY, .... SATURDAY
 substring(0,3) -> 인덱스 0~2까지 추출
+*/
+
+//다른풀이2
+/*
+class Solution {
+    public String solution(int a, int b) {
+        String answer = "";
+        String[] day = {"THU","FRI","SAT","SUN","MON","TUE","WED"};
+        int[] month = {31,29,31,30,31,30,31,31,30,31,30,31};
+        
+        int temp = 0;
+        
+        for(int i=0; i<a-1; i++){
+            temp += month[i];
+        }
+        temp += b;
+        
+        answer = day[temp%7];
+        
+        return answer;
+    }
+}
 */
