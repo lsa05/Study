@@ -1,6 +1,7 @@
 package Algorithm_Study;
 //실패율
 import java.util.*;
+/*
 class Solution {
 	class Fail{
 		int stage;
@@ -55,7 +56,7 @@ class Solution {
         	return answer;
     }
 }
-
+*/
 public class Ex14 {
 	
 	public static void main(String[] args) {

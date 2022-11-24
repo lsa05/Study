@@ -1,6 +1,6 @@
 package Algorithm_Study;
 //실패율2
-class Solution {
+class Solution2 {
     public int[] solution(int N, int[] stages) {
         int[] answer = new int[N]; //answer배열 크기는 스테이지 개수와 같음
         int user = stages.length;	//stages배열 길이는 사용자 수와 같음 
