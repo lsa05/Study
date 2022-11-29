@@ -44,9 +44,9 @@ class Solution4 {
 
 /* map.getOrDefault(runner, 0)를 쓰는 이유 
 	HashMap의 경우 동일 key값을 추가할 경우 value값이 덮어쓰기가 됨
-	따라서 기존 key값의 value를 계속하용하고 싶을 경우, 즉 동명이인이 생길 경우 사용
+	따라서 기존 key값의 value를 계속사용하고 싶을 경우, 즉 동명이인이 생길 경우 사용
 	
-	mpa에 put할 때, map(getOrDefault(runner, 0)을 사용하여 이미 map에 있는 참가자인지 확인
+	map에 put할 때, map(getOrDefault(runner, 0)을 사용하여 이미 map에 있는 참가자인지 확인
 	- 등록되지 않은 참가자라면 default값이 0이 반환, 최종적으로 map.put(runner, 1)이 실행
 	- 이미 등록된 참가라(동명이인 존재)라면 해당 참가자key에 해당하는 value값 1이 리턴, 최종적으로 map.put(runner, 2)이 실행 
  
